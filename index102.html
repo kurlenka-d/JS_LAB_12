@@ -8,14 +8,15 @@
 
 <body>
 
-    <p>Самостоятельная работа 9</p>
+    <p>Самостоятельная работа 9<br>
+        Есть массив с элементами 'a', 'b', 'c', 'b', 'a'. Удалите из него повторяющиеся элементы, используя функцию sort.</p>
 
     <script>
 
-        var a = ['a','b','c','b','a'];
-        a.sort();
-  var q = a.filter((t, i) => a.indexOf(t) == i);
-        console.log("Mассив: " + q);
+        var arr = ['a','b','c','b','a'];
+        arr.sort();
+  var q = arr.filter((t, i) => arr.indexOf(t) == i);
+        alert("Mассив без повторяющихся элементов: " + q);
     </script>
 
 </body>
